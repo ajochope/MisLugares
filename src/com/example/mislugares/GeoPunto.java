@@ -8,13 +8,15 @@ public class GeoPunto {
 	private double longitud;
 
 	public GeoPunto(Double latitud, Double longitud){
+		//this.latitud=(int)(latitud*1E6);
+		//this.longitud=(int)(longitud*1E6);
 		this.latitud=latitud;
 		this.longitud=longitud;
-		
 		
 	}
 	
 	public double getLatitud() {
+//		return (double)latitud/1E6;
 		return latitud;
 	}
 
@@ -23,6 +25,7 @@ public class GeoPunto {
 	}
 
 	public double getLongitud() {
+//		return (double)longitud/1E6;
 		return longitud;
 	}
 

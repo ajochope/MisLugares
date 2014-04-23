@@ -60,7 +60,6 @@ public class VistaLugar extends Activity {
 		setContentView(R.layout.vista_lugar);
 		imageView = (ImageView) findViewById(R.id.foto);
 		
-		
 		Bundle extras = getIntent().getExtras();
 		id = extras.getLong("id", -1);
 		lugar = Lugares.elemento((int) id);
@@ -94,6 +93,7 @@ public class VistaLugar extends Activity {
 		case R.id.accion_borrar:
 			confirmarBorrado();
 			return true;
+
 		default:
 			return super.onOptionsItemSelected(item);
 		}
@@ -291,7 +291,6 @@ public class VistaLugar extends Activity {
 		}
 		*/
 		
-		//imageView = (ImageView) findViewById(R.id.foto);
         ponerFoto(imageView, lugar.getFoto());
        
         // ponerFoto(imageView, lugar.getFoto());

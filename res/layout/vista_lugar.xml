@@ -168,7 +168,8 @@
             android:layout_height="wrap_content"
             android:adjustViewBounds="true"
             android:contentDescription="fotografía"
-            android:src="@drawable/oona" />
+            android:background="@drawable/foto_epsg"
+            android:src="@drawable/foto_epsg" />
 
         <FrameLayout
             android:layout_width="match_parent"
